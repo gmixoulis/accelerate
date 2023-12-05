@@ -1,0 +1,535 @@
+{
+  "AccelerateDB": {
+    "Country": {
+      "fields": [
+        {
+          "name": "CountryID",
+          "type": "int unsigned",
+          "constraints": ["NOT NULL", "AUTO_INCREMENT"],
+          "key": "PRIMARY KEY"
+        },
+        {
+          "name": "EnglishName",
+          "type": "varchar(255)",
+          "constraints": ["NOT NULL"]
+        },
+        {
+          "name": "CountryCode_2",
+          "type": "varchar(2)",
+          "constraints": ["NOT NULL"]
+        },
+        {
+          "name": "CountryCode_3",
+          "type": "varchar(3)",
+          "constraints": ["DEFAULT NULL"]
+        },
+        {
+          "name": "Nationality",
+          "type": "varchar(45)",
+          "constraints": ["DEFAULT NULL"]
+        },
+        {
+          "name": "ContinentID",
+          "type": "int unsigned",
+          "constraints": ["NOT NULL"],
+          "key": "FOREIGN KEY",
+          "references": {
+            "table": "Continent",
+            "field": "ContinentID"
+          }
+        },
+        {
+          "name": "CountryPolygon",
+          "type": "geometry",
+          "constraints": ["DEFAULT NULL"]
+        }
+      ]
+    },
+    "Social-Media": {
+      "fields": [
+        {
+          "name": "SocialMediaID",
+          "type": "int unsigned",
+          "constraints": ["NOT NULL", "AUTO_INCREMENT"],
+          "key": "PRIMARY KEY"
+        },
+        {
+          "name": "SiteName",
+          "type": "varchar(255)",
+          "constraints": ["NOT NULL"]
+        },
+        {
+          "name": "SiteMainURL",
+          "type": "varchar(255)",
+          "constraints": ["NOT NULL"]
+        },
+        {
+          "name": "SocialMediaProfileURL",
+          "type": "varchar(255)",
+          "constraints": ["NOT NULL"]
+        },
+        {
+          "name": "RegexAllowedProfileStructure",
+          "type": "varchar(255)",
+          "constraints": ["NOT NULL"]
+        },
+        {
+          "name": "CountryID",
+          "type": "int unsigned",
+          "constraints": ["NOT NULL"],
+          "key": "FOREIGN KEY",
+          "references": {
+            "table": "Country",
+            "field": "CountryID"
+          }
+        }
+      ]
+    },
+    "TimeZone": {
+      "fields": [
+        {
+          "name": "TimeZoneID",
+          "type": "int unsigned",
+          "constraints": ["NOT NULL", "AUTO_INCREMENT"],
+          "key": "PRIMARY KEY"
+        },
+        {
+          "name": "TimezoneName",
+          "type": "varchar(255)",
+          "constraints": ["DEFAULT NULL"]
+        },
+        {
+          "name": "UtcOffset",
+          "type": "decimal(4,2)",
+          "constraints": ["DEFAULT NULL"]
+        },
+        {
+          "name": "DstStart",
+          "type": "timestamp",
+          "constraints": ["DEFAULT NULL"]
+        },
+        {
+          "name": "DstEnd",
+          "type": "timestamp",
+          "constraints": ["DEFAULT NULL"]
+        },
+        {
+          "name": "DstTUstTOffset",
+          "type": "decimal(4,2)",
+          "constraints": ["DEFAULT NULL"]
+        }
+      ]
+    },
+    "Country-group": {
+      "fields": [
+        {
+          "name": "CountryGroupID",
+          "type": "int unsigned",
+          "constraints": ["NOT NULL", "AUTO_INCREMENT"],
+          "key": "PRIMARY KEY"
+        },
+        {
+          "name": "Description",
+          "type": "varchar(255)",
+          "constraints": ["NOT NULL"]
+        },
+        {
+          "name": "Abbreviation",
+          "type": "varchar(10)",
+          "constraints": ["DEFAULT NULL"]
+        }
+      ]
+    },
+    "Continent": {
+      "fields": [
+        {
+          "name": "ContinentID",
+          "type": "int unsigned",
+          "constraints": ["NOT NULL", "AUTO_INCREMENT"],
+          "key": "PRIMARY KEY"
+        },
+        {
+          "name": "Description",
+          "type": "varchar(255)",
+          "constraints": ["NOT NULL"]
+        }
+      ]
+    },
+    "corporateLegalType": {
+      "fields": [
+        {
+          "name": "CorporateLegalID",
+          "type": "int unsigned",
+          "constraints": ["NOT NULL", "AUTO_INCREMENT"],
+          "key": "PRIMARY KEY"
+        },
+        {
+          "name": "LegalTypeName",
+          "type": "varchar(255)",
+          "constraints": ["NOT NULL"]
+        },
+        {
+          "name": "LegalTypeDescription",
+          "type": "varchar(255)",
+          "constraints": ["DEFAULT NULL"]
+        }
+      ]
+    },
+    "App": {
+      "fields": [
+        {
+          "name": "AppID",
+          "type": "int unsigned",
+          "constraints": ["NOT NULL", "AUTO_INCREMENT"],
+          "key": "PRIMARY KEY"
+        },
+        {
+          "name": "UserID",
+          "type": "int unsigned",
+          "constraints": [
+            "NOT NULL",
+            "FOREIGN KEY",
+            "REFERENCES Users(UserID)"
+          ],
+          "key": "INDEX"
+        },
+        {
+          "name": "AppCategoryID",
+          "type": "int unsigned",
+          "constraints": [
+            "NOT NULL",
+            "FOREIGN KEY",
+            "REFERENCES AppCategories(AppCategoryID)"
+          ],
+          "key": "INDEX"
+        },
+        {
+          "name": "AppName",
+          "type": "varchar(255)",
+          "constraints": ["NOT NULL"]
+        },
+        {
+          "name": "Description",
+          "type": "text",
+          "constraints": ["DEFAULT NULL"]
+        },
+        {
+          "name": "Retired",
+          "type": "tinyint(1)",
+          "constraints": ["DEFAULT '0'"]
+        },
+        {
+          "name": "IconURL",
+          "type": "text",
+          "constraints": ["DEFAULT NULL"]
+        },
+        {
+          "name": "ScreenshotsURL",
+          "type": "text",
+          "constraints": ["DEFAULT NULL"]
+        },
+        {
+          "name": "DocumentationURL",
+          "type": "text",
+          "constraints": ["DEFAULT NULL"]
+        },
+        {
+          "name": "SupportURL",
+          "type": "text",
+          "constraints": ["DEFAULT NULL"]
+        },
+        {
+          "name": "AppStatusID",
+          "type": "int unsigned",
+          "constraints": [
+            "DEFAULT NULL",
+            "FOREIGN KEY",
+            "REFERENCES AppStatuses(AppStatusID)"
+          ],
+          "key": "INDEX"
+        },
+        {
+          "name": "AppPrivacy",
+          "type": "text",
+          "constraints": ["DEFAULT NULL"]
+        },
+        {
+          "name": "Copyright",
+          "type": "varchar(45)",
+          "constraints": ["DEFAULT NULL"]
+        }
+      ]
+    },
+
+    "Address": {
+      "fields": [
+        {
+          "name": "AddressID",
+          "type": "int unsigned",
+          "constraints": ["NO", "PRI"],
+          "key": "auto_increment"
+        },
+        {
+          "name": "StreetAddress1",
+          "type": "varchar(255)",
+          "constraints": ["NO", ""]
+        },
+        {
+          "name": "StreetAddress2",
+          "type": "varchar(255)",
+          "constraints": ["YES", ""]
+        },
+        {
+          "name": "StreetAddress3",
+          "type": "varchar(255)",
+          "constraints": ["YES", ""]
+        },
+        {
+          "name": "District",
+          "type": "varchar(255)",
+          "constraints": ["YES", ""]
+        },
+        {
+          "name": "SubDistrict",
+          "type": "varchar(255)",
+          "constraints": ["YES", ""]
+        },
+        {
+          "name": "Building",
+          "type": "varchar(255)",
+          "constraints": ["YES", ""]
+        },
+        {
+          "name": "CityID",
+          "type": "int unsigned",
+          "constraints": ["NO", "MUL"]
+        },
+        {
+          "name": "AdministrativeDivisionLevel1ID",
+          "type": "int unsigned",
+          "constraints": ["YES", "MUL"]
+        },
+        {
+          "name": "AdministrativeDivisionLevel2ID",
+          "type": "int unsigned",
+          "constraints": ["YES", "MUL"]
+        },
+        {
+          "name": "AdministrativeDivisionLevel3ID",
+          "type": "int unsigned",
+          "constraints": ["YES", "MUL"]
+        },
+        {
+          "name": "AdministrativeDivisionLevel4ID",
+          "type": "int unsigned",
+          "constraints": ["YES", "MUL"]
+        },
+        {
+          "name": "CountryID",
+          "type": "int unsigned",
+          "constraints": ["NO", "MUL"]
+        },
+        {
+          "name": "PostalCodeID",
+          "type": "int unsigned",
+          "constraints": ["YES", "MUL"]
+        },
+        {
+          "name": "Latitude",
+          "type": "decimal(9,6)",
+          "constraints": ["YES", ""]
+        },
+        {
+          "name": "Longitude",
+          "type": "decimal(9,6)",
+          "constraints": ["YES", ""]
+        }
+      ]
+    },
+    "City": {
+      "fields": [
+        {
+          "name": "CityID",
+          "type": "int unsigned",
+          "constraints": ["NO", "PRI"],
+          "key": "auto_increment"
+        },
+        {
+          "name": "EnglishName",
+          "type": "varchar(255)",
+          "constraints": ["NO", ""]
+        },
+        {
+          "name": "LocalName",
+          "type": "varchar(255)",
+          "constraints": ["YES", ""]
+        },
+        {
+          "name": "AdministrativeDivisionLevel1ID",
+          "type": "int unsigned",
+          "constraints": ["YES", "MUL"]
+        },
+        {
+          "name": "AdministrativeDivisionLevel2ID",
+          "type": "int unsigned",
+          "constraints": ["YES", "MUL"]
+        },
+        {
+          "name": "AdministrativeDivisionLevel3ID",
+          "type": "int unsigned",
+          "constraints": ["YES", "MUL"]
+        },
+        {
+          "name": "AdministrativeDivisionLevel4ID",
+          "type": "int unsigned",
+          "constraints": ["YES", "MUL"]
+        },
+        {
+          "name": "CountryID",
+          "type": "int unsigned",
+          "constraints": ["NO", "MUL"]
+        },
+        {
+          "name": "CityCenterPoint",
+          "type": "geometry",
+          "constraints": ["YES", ""]
+        },
+        {
+          "name": "Citycol",
+          "type": "varchar(45)",
+          "constraints": ["YES", ""]
+        }
+      ]
+    },
+    "Currency": {
+      "fields": [
+        {
+          "name": "CurrencyID",
+          "type": "int unsigned",
+          "constraints": ["NO", "PRI"],
+          "key": "auto_increment"
+        },
+        {
+          "name": "CurrencyCode",
+          "type": "varchar(5)",
+          "constraints": ["YES", ""]
+        },
+        {
+          "name": "CurrencyName",
+          "type": "varchar(50)",
+          "constraints": ["YES", ""]
+        },
+        {
+          "name": "CurrencySymbol",
+          "type": "varchar(10)",
+          "constraints": ["YES", ""]
+        },
+        {
+          "name": "DECIMAL_POINTS",
+          "type": "int",
+          "constraints": ["NO", "", "2", ""]
+        },
+        {
+          "name": "IsCrypto",
+          "type": "tinyint(1)",
+          "constraints": ["NO", "", "0", ""]
+        },
+        {
+          "name": "LogoUrl",
+          "type": "varchar(255)",
+          "constraints": ["YES", ""]
+        },
+        {
+          "name": "BlockExplorerName",
+          "type": "varchar(50)",
+          "constraints": ["YES", ""]
+        },
+        {
+          "name": "BlockExplorerURL",
+          "type": "varchar(255)",
+          "constraints": ["YES", ""]
+        },
+        {
+          "name": "AddressURLStructure",
+          "type": "varchar(255)",
+          "constraints": ["YES", ""]
+        },
+        {
+          "name": "TransactionURLStructure",
+          "type": "varchar(255)",
+          "constraints": ["YES", ""]
+        },
+        {
+          "name": "AddressRegex",
+          "type": "varchar(255)",
+          "constraints": ["YES", ""]
+        },
+        {
+          "name": "TransactionRegex",
+          "type": "varchar(255)",
+          "constraints": ["YES", ""]
+        },
+        {
+          "name": "Currencycol",
+          "type": "varchar(45)",
+          "constraints": ["YES", ""]
+        }
+      ]
+    },
+    "PhoneNumber": {
+      "fields": [
+        {
+          "name": "PhoneNumberID",
+          "type": "int unsigned",
+          "constraints": ["NO", "PRI"],
+          "key": "auto_increment"
+        },
+        {
+          "name": "PhoneNumberE164",
+          "type": "varchar(20)",
+          "constraints": ["YES", ""]
+        },
+        {
+          "name": "CountryID",
+          "type": "int unsigned",
+          "constraints": ["YES", "MUL"]
+        },
+        {
+          "name": "InternationalFormat",
+          "type": "varchar(20)",
+          "constraints": ["YES", ""]
+        },
+        {
+          "name": "NationalFormat",
+          "type": "varchar(20)",
+          "constraints": ["YES", ""]
+        },
+        {
+          "name": "InternationalPrefix",
+          "type": "varchar(10)",
+          "constraints": ["YES", ""]
+        },
+        {
+          "name": "NationalPrefix",
+          "type": "varchar(10)",
+          "constraints": ["YES", ""]
+        },
+        {
+          "name": "ValidationRules",
+          "type": "varchar(255)",
+          "constraints": ["YES", ""]
+        },
+        {
+          "name": "CarrierInfo",
+          "type": "varchar(255)",
+          "constraints": ["YES", ""]
+        },
+        {
+          "name": "GeoNameId",
+          "type": "int",
+          "constraints": ["YES", ""]
+        }
+      ]
+    }
+  }
+}

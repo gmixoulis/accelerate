@@ -1,0 +1,15 @@
+{
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "dateOfBirth": "Date of Birth",
+    "nationality": "Nationality",
+    "email": "Email",
+    "password": "Password",
+    "signUp": "Sign Up",
+    "invalidName": "First name is required",
+    "invalidLastName": "Last name is required",
+    "invalidDateOfBirth": "Date of birth is required",
+    "invalidNationality": "Nationality is required",
+    "invalidEmail": "Invalid email address",
+    "invalidPassword": "Password must be at least 8 characters"
+  }

@@ -1,0 +1,202 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* If you have local font files */
+@font-face {
+  font-family: "Helvetica Neue Greek";
+  src: url("../../public/fonts/HelveticaNeueGreek-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue Greek";
+  src: url("../../public/fonts/HelveticaNeueGreek-Light.otf") format("opentype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue Greek";
+  src: url("../../public/fonts/HelveticaNeueGreek-Medium.otf")
+    format("opentype");
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue Greek";
+  src: url("../../public/fonts/HelveticaNeueGreek-Regular.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  @apply leading-[normal] m-0;
+}
+[class*="ReactFlagsSelect-module_selectOptions"] {
+  bottom: 100%;
+  color: black;
+}
+:is(.dark [class*="module_selectOptions__"]) {
+  background-color: #454545 !important;
+}
+:is(.dark .MuiDataGrid-cell) {
+  background-color: #454545 !important;
+  color: white !important;
+}
+#fc_widget html {
+  background-color: #454545 !important;
+  color: white !important;
+}
+#dataGrid {
+  margin-bottom: 50px;
+}
+:is(.dark [id^="headlessui-combobox-options-:r"]) {
+  background-color: #454545;
+}
+:is(.dark span) {
+  color: white !important;
+}
+:is(.dark .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root) {
+  color: white !important;
+}
+:is(.dark .MuiBox-root.css-1wnsr1i) {
+  background-color: #454545 !important;
+  span {
+    color: white !important;
+  }
+}
+:is(.dark .MuiInputBase-input) {
+  color: white !important;
+}
+:is(.dark .Mui-focused) {
+  color: white !important;
+  border: white !important;
+}
+:is(.dark .MuiOutlinedInput-root:hover fieldset) {
+  border: #fff solid 1px;
+  border-radius: 4px;
+}
+:is(.dark .MuiOutlinedInput-root fieldset) {
+  border: #979797 solid 1px;
+  border-radius: 4px;
+}
+:is(.dark .MuiInputLabel-root) {
+  color: white !important;
+}
+:is(.dark .MuiLink-root) {
+  text-decoration: underline;
+}
+:is(.dark .MuiSvgIcon-root) {
+  color: lightblue !important;
+  /* #dont change it */
+}
+:is(.dark .MuiTablePagination-selectLabel) {
+  color: white !important;
+}
+:is(.dark .MuiTablePagination-displayedRows) {
+  color: white !important;
+}
+:is(.dark .MuiButton-root) {
+  color: white !important;
+  border: #979797 solid 1px;
+}
+:is(.dark .MuiButton-root:hover) {
+  border: #fff solid 1px;
+}
+:is(.dark .MuiAccordionDetails-root) {
+  color: white;
+  background-color: #313131;
+}
+:is(.dark .MuiAccordionSummary-root) {
+  color: white;
+  background-color: #393939;
+}
+:is(.dark #transition-modal-description) {
+  color: black;
+}
+.MuiMenu-root .MuiPaper-root.MuiMenu-paper {
+  @apply text-gray-800 bg-white dark:bg-gray-700 dark:text-gray-200;
+}
+.MuiPaper-root.MuiMenu-paper .Mui-selected {
+  @apply dark:bg-gray-600;
+}
+.MuiPaginationItem-root {
+  @apply dark:text-white;
+}
+.fc-widget-normal.multi-widget-ui {
+  background-color: transparent !important;
+}
+:is(.dark #rfs-btn) {
+  color: white;
+  border-color: aliceblue;
+}
+:is(.dark .MuiDataGrid-filterForm) {
+  background-color: #313131;
+}
+
+:is(.dark .MuiList-root) {
+  background-color: #313131;
+}
+:is(.dark .MuiDataGrid-panelWrapper) {
+  background-color: #313131;
+}
+:is(.dark .css-1dmqq7i-MuiNativeSelect-select-MuiInputBase-input-MuiInput-input:not([multiple]) option, .css-1dmqq7i-MuiNativeSelect-select-MuiInputBase-input-MuiInput-input:not([multiple]) optgroup) {
+  background-color: #313131;
+  color: #fff;
+}
+#modal {
+  width: auto !important;
+  height: auto !important;
+}
+[id^="headlessui-combobox-option-"].bg-teal-600 {
+  background-color: gray;
+}
+#globalLoader {
+  position: fixed;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+/* @media (prefers-color-scheme: dark) {
+  h2 {
+    color: white;
+  }
+  input {
+    background-color: #58595b;
+  }
+} */
+.Toastify__toast-container {
+  z-index: 200000;
+}
+
+#signinfooter footer {
+  font-size: 0.8rem !important;
+}
+footer {
+  z-index: 9999999 !important;
+}
+
+[class*="MuiInputBase-root-MuiOutlinedInput-root"].Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #58595b !important;
+  border-width: 2px;
+}
+
+[class*="MuiFormLabel-root-MuiInputLabel-root"].Mui-focused {
+  color: #58595b !important;
+}
+
+:is(.dark [class*="MuiFormLabel-root-MuiInputLabel-root"].Mui-focused) {
+  color: white !important;
+}

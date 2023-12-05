@@ -1,0 +1,18 @@
+{
+  "Sign In": "Sign In",
+  "Password": "Password",
+  "Enable two-factor Authenticator": "Enable two-factor Authenticator",
+  "Scan the QR code with your two-factor authentication app": "Scan the QR code with your two-factor authentication app",
+  "If your app does not recognize the QR code, type the following key:": "If your app does not recognize the QR code, type the following key:",
+  "To finish the setup, enter the 6-digit code from the app:": "To finish the setup, enter the 6-digit code from the app:",
+  "Continue": "Continue",
+  "Cancel": "Cancel",
+  "Type the 6-digit code here": "Type the 6-digit code here",
+  "Enter your password for verification": "Enter your password for verification",
+  "Minimum 10 characters": "Minimum 10 characters",
+  "Lowercase and uppercase characters": "Lowercase and uppercase characters",
+  "Add a special character": "Add a special character: ! @ # $ % ^ & * ( ) - _ = + [ ] { } | < > / ?",
+  "Contain at least one digit": "Contain at least one digit",
+  "Confirm action to proceed": "Confirm action to proceed",
+  "Reset password confirmation": "Reset password confirmation"
+}

@@ -1,0 +1,76 @@
+{
+  "Thumbnail": "Thumbnail",
+  "Name": "Name",
+  "Title": "Title",
+  "Type": "Type",
+  "Actions": "Actions",
+  "Date": "Date",
+  "Size": "Size",
+
+  "There was an error deleting the file": "There was an error deleting the file",
+  "File deleted successfully": "File deleted successfully",
+  "File updated successfully": "File updated successfully",
+  "File updated failed": "File updated failed",
+  "File uploaded successfully": "File uploaded successfully",
+  "File type not allowed": "File type not allowed",
+  "Select": "Select",
+  "Upload": "Upload",
+  "Cancel": "Cancel",
+
+  "Please use a valid URL" : "Please use a valid URL",
+  "Fetching URL. Results will be ready in a few minutes.": "Fetching URL. Results will be ready in a few minutes.",
+  "Fetching URL failed.": "Fetching URL failed.",
+  "Please enter a valid URL": "Please enter a valid URL",
+  "Type a website URL": "Type a website URL",
+  "With Images": "With Images",
+  "Fetch URL": "Fetch URL",
+
+  "No alt text": "No alt text",
+  "Back": "Back",
+  "Download:": "Download:",
+  "Info": "Info",
+  "Requested by:": "Requested by: ",
+  "Uploaded by:": "Uploaded by: ",
+  "App Owner:": "App Owner: ",
+  "File Type:": "File Type: ",
+  "File Size:": "File Size: ",
+  "File Dimensions:": "File Dimensions: ",
+  "Creative Commons / Open Content Licenses:": "Creative Commons / Open Content Licenses:",
+  "Select a Creative Commons license...": "Select a Creative Commons license only if you are the content owner and there is no third party intellectual property in the content. Note that Creative Commons licenses are irrevocable.",
+  "Select License": "Select License",
+  "None": "None",
+
+  "Advanced Metadata": "Advanced Metadata",
+  "Request Metadata Extraction": "Request Metadata Extraction",
+  "Request for Metadata extraction in progress": "Request for Metadata extraction in progress",
+
+  "Website Article": "Website Article",
+  "Website Images": "Website Images",
+  "Website text is processing": "Website text is processing",
+  "Send to Powerflow": "Send to Powerflow",
+
+  "Related Files": "Related Files",
+  "Original": "Original",
+
+  "File {fieldName}":{
+    "Name":"File Name",
+    "Title": "File Title",
+    "Alt": "File Alt"
+  },
+
+  "File GPS": "File GPS",
+
+  "Table": "Table",
+  "Grid": "Grid",
+  "OR": "OR",
+
+  "Following files were rejected by the server \n\n":"Following files were rejected by the server \n\n",
+  "Submitting for metadata extraction": "Submitting for metadata extraction",
+  "Some files are not accepted": "Some files are not accepted",
+  "Drag n drop": "Drag n drop some files here, or click to select files",
+  "Limit": "(limited to 5/files per time)",
+
+  "Please select": "Please select",
+  "Import from URL": "Import from URL"
+
+}

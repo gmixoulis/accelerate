@@ -1,0 +1,74 @@
+{
+  "Thumbnail": "Εικόνα",
+  "Name": "Όνομα",
+  "Title": "Τίτλος",
+  "Type": "Τύπος",
+  "Actions": "Δράσεις",
+  "Date": "Ημερομηνία",
+  "Size": "Μέγεθος",
+
+  "There was an error deleting the file": "Υπήρξε σφάλμα κατά τη διαγραφή του αρχείου",
+  "File deleted successfully": "Το αρχείο διαγράφηκε επιτυχώς",
+  "File updated successfully": "Το αρχείο ενημερώθηκε με επιτυχία",
+  "File updated failed": "Απέτυχε η ενημέρωση του αρχείου",
+  "File uploaded successfully": "Το αρχείο μεταφορτώθηκε επιτυχώς",
+  "File type not allowed": "Ο τύπος αρχείου δεν επιτρέπεται",
+  "Select": "Επιλέξτε",
+  "Upload": "Ανέβασμα",
+  "Cancel": "Ακύρωση",
+
+  "Please use a valid URL" : "Παρακαλούμε χρησιμοποιήστε ένα έγκυρο URL",
+  "Fetching URL. Results will be ready in a few minutes.": "Λήψη URL. Τα αποτελέσματα θα είναι έτοιμο σε λίγα λεπτά.",
+  "Fetching URL failed.": "Η λήψη της διεύθυνσης URL απέτυχε.",
+  "Please enter a valid URL": "Παρακαλώ εισάγετε ένα έγκυρο URL",
+  "Type a website URL": "Πληκτρολογήστε το URL",
+  "With Images": "Με εικόνες",
+  "Fetch URL": "Λήψη URL",
+
+  "No alt text": "Χωρίς alt κείμενο",
+  "Back": "Πίσω",
+  "Download:": "Λήψη: ",
+  "Info": "Πληροφορίες",
+  "Requested by:": "Ζητήθηκε από: ",
+  "Uploaded by:": "Μεταφορτώθηκε από: ",
+  "App Owner:": "Ιδιοκτήτης εφαρμογής: ",
+  "File Type:": "Τύπος αρχείου: ",
+  "File Size:": "Μέγεθος αρχείου: ",
+  "File Dimensions:": "Διαστάσεις αρχείου: ",
+  "Creative Commons / Open Content Licenses:": "Άδειες χρήσης Δημιουργικά Κοινά / Ανοικτού Περιεχομένου:",
+  "Select a Creative Commons license...": "Επιλέξτε μια άδεια Δημιουργικά Κοινά μόνο εάν είστε ο ιδιοκτήτης του περιεχομένου και δεν υπάρχει πνευματική ιδιοκτησία τρίτων στο περιεχόμενο. Σημειώστε ότι οι άδειες Creative Commons είναι αμετάκλητες.",
+  "Select License": "Επιλέξτε Άδεια",
+  "None": "Κανένα",
+
+  "Advanced Metadata": "Προηγμένα μεταδεδομένα",
+  "Request Metadata Extraction": "RΕξαγωγή μεταδεδομένων αιτήματος",
+  "Request for Metadata extraction in progress": "Αίτημα για εξαγωγή μεταδεδομένων σε εξέλιξη",
+
+  "Website Article": "Ιστοσελίδα Άρθρο",
+  "Website Images": "Ιστοσελίδα Εικόνες",
+  "Website text is processing": "Κείμενο ιστοσελίδας σε εξέλιξη",
+  "Send to Powerflow": "Στείλτε στο Powerflow",
+
+  "Related Files": "Σχετικά αρχεία",
+  "Original": "Αρχικό",
+
+  "File {fieldName}":{
+    "Name":"Όνομα αρχείου",
+    "Title": "Τίτλος αρχείου",
+    "Alt": "Αρχείο Alt"
+  },
+
+  "File GPS": "Αρχείο GPS",
+  "Table": "Πίνακας",
+  "Grid": "Πλέγμα",
+  "OR": "Ή",
+
+  "Following files were rejected by the server \n\n":"Τα ακόλουθα αρχεία απορρίφθηκαν από τον διακομιστή \n\n",
+  "Submitting for metadata extraction": "Υποβολή για εξαγωγή μεταδεδομένων",
+  "Some files are not accepted": "Ορισμένα αρχεία δεν γίνονται δεκτά",
+  "Drag n drop": "Σύρετε και αφήστε μερικά αρχεία εδώ ή κάντε κλικ για να επιλέξετε αρχεία.",
+  "Limit": "(περιορίζεται σε 5/αρχεία κάθε φορά)",
+
+  "Please select": "Παρακαλώ επιλέξτε",
+  "Import from URL": "Εισαγωγή από URL"
+}

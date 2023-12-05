@@ -1,0 +1,117 @@
+{
+  "AccelerateDB": {
+    "Tenant": {
+      "fields": [
+        {
+          "name": "TenantID",
+          "type": "int unsigned",
+          "constraints": [
+            "NOT NULL",
+            "AUTO_INCREMENT"
+          ],
+          "key": "PRIMARY KEY"
+        },
+        {
+          "name": "TenantEnglishName",
+          "type": "varchar(255)",
+          "constraints": [
+            "NOT NULL"
+          ]
+        },
+        {
+          "name": "TenantNativeName",
+          "type": "varchar(255)",
+          "constraints": [
+            "DEFAULT NULL"
+          ]
+        },
+        {
+          "name": "CorporateLegalTypeID",
+          "type": "int unsigned",
+          "constraints": [
+            "DEFAULT NULL"
+          ],
+          "key": "FOREIGN KEY",
+          "references": {
+            "table": "CorporateLegalType",
+            "field": "CorporateLegalTypeID"
+          }
+        },
+        {
+          "name": "TenantLegalName",
+          "type": "varchar(255)",
+          "constraints": [
+            "DEFAULT NULL"
+          ]
+        },
+        {
+          "name": "TenantGovIDNumber",
+          "type": "varchar(255)",
+          "constraints": [
+            "DEFAULT NULL"
+          ]
+        },
+        {
+          "name": "TenantVATNumber",
+          "type": "varchar(255)",
+          "constraints": [
+            "DEFAULT NULL"
+          ]
+        },
+        {
+          "name": "CountryID",
+          "type": "int unsigned",
+          "constraints": [
+            "DEFAULT NULL"
+          ],
+          "key": "FOREIGN KEY",
+          "references": {
+            "table": "Country",
+            "field": "CountryID"
+          }
+        },
+        {
+          "name": "Description",
+          "type": "varchar(255)",
+          "constraints": [
+            "DEFAULT NULL"
+          ]
+        },
+        {
+          "name": "Source",
+          "type": "varchar(255)",
+          "constraints": [
+            "DEFAULT NULL"
+          ]
+        },
+        {
+          "name": "Domain",
+          "type": "text",
+          "constraints": [
+            "DEFAULT NULL"
+          ]
+        }
+      ]
+    },
+    "Role": {
+      "fields": [
+        {
+          "name": "RoleID",
+          "type": "int unsigned",
+          "constraints": [
+            "NOT NULL",
+            "AUTO_INCREMENT"
+          ],
+          "key": "PRIMARY KEY"
+        },
+        {
+          "name": "RoleName",
+          "type": "varchar(255)",
+          "constraints": [
+            "DEFAULT NULL"
+          ]
+        }
+      ]
+    }
+  }
+}

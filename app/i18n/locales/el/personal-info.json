@@ -1,0 +1,19 @@
+{
+  "First Name": "Όνομα",
+  "Middle Name": "Μεσαίο Ονομα",
+  "Last Name": "Επώνυμο",
+  "Display Name": "Όνομα Εμφάνισης",
+  "Handle": "Χειριστής",
+  "Account Info": "Πληροφορίες Λογαριασμού",
+  "User Handle": "Ψευδώνυμο",
+  "Add your first name": "Προσθέστε το όνομά σας",
+  "Add your last name": "Προσθέστε το επώνυμό σας",
+  "Add your middle name": "Προσθέστε το μεσαίο σας όνομα",
+  "Add your user handle": "Προσθέστε το όνομα χρήστη σας",
+  "Add a profile name to personalize your account": "Προσθήκη ονόματος προφίλ",
+  "UserHandleMin": " θα πρέπει να έχει τουλάχιστον 2 χαρακτήρες",
+  "UserHandleMax": " θα πρέπει να έχει το πολύ 25 χαρακτήρες",
+  "UserHandlePattern": " θα πρέπει να περιέχει μόνο λατινικά γράμματα, αριθμούς, και παύλες",
+  "NamePattern": " θα πρέπει να περιέχει μόνο γράμματα και κενά",
+  "Are you sure you want to delete this data?" : "Είστε σίγουροι ότι θέλετε να διαγράψετε το αντικείμενο;"
+}

@@ -1,0 +1,164 @@
+/* @config './tailwind.powerflow.config.js';
+@tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/*
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}*/
+
+
+  
+
+
+/* Custom Scrollbar */
+/* For WebKit-based browsers (Chrome, Safari, Opera) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  @apply bg-gray-200 dark:bg-gray-700;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 dark:bg-gray-400;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500 dark:bg-gray-300;
+}
+
+/* For Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #BEBEBE #F5F5F5;
+}
+
+.custom-box {
+  @apply bg-white dark:bg-gray-700 border border-gray-300 rounded-md shadow-sm dark:border-gray-600 dark:text-gray-50 hover:bg-gray-100 dark:hover:bg-gray-600 focus:ring-0 focus:ring-offset-0 focus:border-dimgray-200 dark:focus:border-gray-500;
+}
+
+.custom-box:focus {
+  @apply hover:bg-gray-100 dark:hover:bg-gray-700
+}
+
+.custom-box.user-message {
+  @apply bg-dimgray-200 dark:bg-darkslategray-200 text-white dark:border-gray-700 hover:bg-dimgray-200;
+}
+
+.custom-box.assistant-message {
+  @apply bg-gray-200 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-700;
+}
+
+.message-bubble {
+  border-radius: 12px;
+  padding: 8px 20px;
+  display: flex;
+  flex-direction: column; 
+  @apply max-w-[90%] md:max-w-[100%];
+}
+
+.message-header {
+  font-weight: bold;
+  padding: 4px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.primary-button {
+  @apply bg-dimgray-200 dark:bg-darkslategray-200 text-gray-50 focus:outline-none hover:bg-dimgray-100 shadow dark:border dark:border-gray-600 font-medium text-white;
+}
+
+.secondary-button {
+  @apply text-gray-800 bg-gray-200 focus:outline-none hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-gray-100 shadow;
+}
+
+.toggle-button {
+  @apply text-gray-800 dark:bg-gray-900 dark:text-gray-300 dark:hover:bg-gray-800 !font-regular dark:!border-gray-500;
+}
+.toggle-button.Mui-selected {
+  @apply text-white dark:bg-gray-700 dark:text-white dark:hover:bg-gray-800 font-regular;
+}
+
+.mui-checkbox {
+  @apply !text-gray-500 dark:!text-gray-300;
+}
+
+.mui-checkbox.Mui-checked {
+  @apply !text-gray-600 dark:!text-gray-300;
+}
+
+.autorefresh .MuiSwitch-thumb {
+  @apply text-white dark:!text-gray-300;
+}
+.autorefresh .MuiSwitch-switchBase.Mui-checked+.MuiSwitch-track {
+  @apply !bg-green-100 !opacity-80 dark:!bg-green-500;
+}
+
+.MuiSelect-icon {
+  @apply text-gray-500 dark:text-gray-300;
+}
+
+.back-button {
+  background-color: #d32f2f;
+}
+
+.MuiAutocomplete-listbox {
+  @apply bg-white dark:bg-gray-700 text-gray-800 dark:text-white;
+}
+
+#panel-1bh-header {
+  @apply bg-gray-200 dark:bg-darkslategray-200;
+}
+
+.MuiAutocomplete-loading, .MuiAutocomplete-noOptions {
+  @apply bg-white dark:bg-gray-700 text-gray-800 dark:text-white;
+}
+
+.MuiPickersLayout-root, .MuiPickersLayout-actionBar, .MuiPickersToolbar-root {
+  @apply bg-white dark:bg-[#313131] dark:text-white;
+}
+
+.MuiPickersLayout-root .MuiChip-root {
+  @apply bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white;
+}
+
+.MuiDateRangeCalendar-root {
+  @apply bg-white dark:bg-darkslategray-100 text-gray-800 dark:text-white;
+}
+
+.MuiPickersDay-root {
+  @apply dark:text-white;
+}
+
+.MuiDateRangePickerDay-rangeIntervalDayHighlight {
+  @apply dark:text-white;
+}
+
+.MuiPickersDay-today.MuiDateRangePickerDay-day:not(.Mui-selected) {
+  @apply dark:border-white;
+}
+
+.MuiDateRangePickerDay-rangeIntervalDayHighlight {
+  @apply dark:!bg-gray-700;
+}

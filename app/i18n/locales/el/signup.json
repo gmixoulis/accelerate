@@ -1,0 +1,15 @@
+{
+    "firstName": "Όνομα",
+    "lastName": "Επώνυμο",
+    "dateOfBirth": "Ημερομηνία γέννησης",
+    "nationality": "Εθνικότητα",
+    "email": "Email",
+    "password": "Κωδικός",
+    "signUp": "Εγγραφείτε",
+    "invalidName": "Απαιτείται όνομα",
+    "invalidLastName": "Απαιτείται επώνυμο",
+    "invalidDateOfBirth": "Απαιτείται ημερομηνία γέννησης",
+    "invalidNationality": "Απαιτείται ιθαγένεια",
+    "invalidEmail": "Μη έγκυρη διεύθυνση email",
+    "invalidPassword": "Ο κωδικός πρόσβασης πρέπει να είναι τουλάχιστον 8 χαρακτήρες"
+  }

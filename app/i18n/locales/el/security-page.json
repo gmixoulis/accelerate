@@ -1,0 +1,18 @@
+{
+  "Sign In": "Συνδεθείτε",
+  "Password": "Κωδικός",
+  "Enable two-factor Authenticator": "Ενεργοποίηση αυθεντικοποιητή δύο παραγόντων",
+  "Scan the QR code with your two-factor authentication": "Σαρώστε τον κωδικό QR με την εφαρμογή",
+  "If your app does not recognize the QR code, type the following key:": "Εάν η εφαρμογή σας δεν αναγνωρίζει τον κωδικό QR, πληκτρολογήστε το ακόλουθο κλειδί:",
+  "To finish the setup, enter the 6-digit code from the app": "Για να ολοκληρώσετε τη ρύθμιση, πληκτρολογήστε τον 6ψήφιο κωδικό από την εφαρμογή:",
+  "Continue": "Συνεχίστε",
+  "Cancel": "Ακύρωση",
+  "Type the 6-digit code here": "Πληκτρολογήστε τον 6ψήφιο κωδικό",
+  "Enter your password for verification": "Πληκτρολογήστε τον κωδικό χρήστη για επαλήθευση",
+  "Minimum 10 characters": "Τουλάχιστον 10 χαρακτήρες",
+  "Lowercase and uppercase characters": "Μικρά και κεφαλαία γράμματα",
+  "Add a special character": "Μικρά και κεφαλαία γράμματα: ! @ # $ % ^ & * ( ) - _ = + [ ] { } | < > / ?",
+  "Contain at least one digit": "Να περιέχει τουλάχιστον ένα ψηφίο",
+  "Confirm action to proceed": "Επιβεβαιώστε την ενέργεια για να συνεχίσετε",
+  "Reset password confirmation": "Επιβεβαίωση επαναφοράς κωδικού"
+}

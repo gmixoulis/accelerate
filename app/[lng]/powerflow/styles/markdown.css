@@ -1,0 +1,107 @@
+ 
+.markdown-container ol {
+    list-style: decimal;
+    padding: 0px 0px 0px 20px;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .markdown-container ul {
+    list-style: disc;
+    padding: 0px 0px 0px 20px;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .markdown-container ul ul {
+    list-style: circle;
+  }
+
+  .markdown-container li {
+    padding: 0;
+    margin: 6px 0px;
+  }
+
+  .markdown-container p {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .markdown-container table {
+    border-collapse: collapse;
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    table-layout: fixed;
+  }
+  .markdown-container th,
+  .markdown-container td {
+    @apply border-2 border-gray-400;
+    padding: 8px;
+    text-align: left;
+  }
+  .markdown-container th {
+    @apply bg-indigo-200;
+    font-weight: bold;
+  }
+  
+  .dark .markdown-container th,
+  .dark .markdown-container td {
+    @apply border-2 border-gray-400;
+  }
+  .dark .markdown-container th {
+    @apply bg-gray-600;
+  }
+  
+  .markdown-container pre {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .markdown-container h1 {
+    font-size: 1.4em;
+    margin: 0.67em 0;
+    font-weight: bold;
+  }
+  
+  .markdown-container h2 {
+    font-size: 1.2em;
+    margin: 0.75em 0;
+    font-weight: bold;
+  }
+  
+  .markdown-container h3 {
+    font-size: 1em;
+    margin: 0.83em 0;
+    font-weight: bold;
+  }
+  
+  .markdown-container h4 {
+    font-size: 0.9em;
+    margin: 1.12em 0;
+    font-weight: bold;
+  }
+  
+  .markdown-container h5 {
+    font-size: 0.75em;
+    margin: 1.5em 0;
+    font-weight: bold;
+  }
+  
+  .markdown-container h6 {
+    font-size: 0.67em;
+    margin: 1.67em 0;
+    font-weight: bold;
+  }
+
+  .markdown-container a {
+    @apply underline hover:no-underline hover:text-blue-500;
+  }
+  
+  .code-header {
+    @apply bg-neutral-900 text-white w-full overflow-x-auto block;
+  }
+
+  .markdown-container code:not([class]) {
+    @apply whitespace-pre-wrap;
+  }

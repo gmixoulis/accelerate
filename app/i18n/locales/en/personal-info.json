@@ -1,0 +1,21 @@
+{
+  "First Name": "First Name",
+  "Middle Name": "Middle Name",
+  "Last Name": "Last Name",
+  "Display Name": "Display Name",
+  "Account Info": "Account Info",
+  "Add new": "Add new",
+  "Socials": "Socials",
+  "User Handle": "User Handle",
+  "Add your first name": "Add your first name",
+  "Add your middle name": "Add your middle name",
+  "Add your last name": "Add your last name",
+  "Add your user handle": "Add your user handle",
+  "Add a profile name to personalize your account": "Add a profile name to personalize your account",
+  "UserHandleMin": " should be at least 2 characters",
+  "UserHandleMax": " should be at most 25 characters",
+  "UserHandlePattern": " should contain only latin letters, numbers, underscores and dashes",
+  "NamePattern": "  should only contain letters and spaces",
+  "Are you sure you want to delete this data?" : "Are you sure you want to delete this data?"
+
+}
